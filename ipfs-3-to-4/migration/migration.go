@@ -12,19 +12,19 @@ import (
 
 	migrate "github.com/ipfs/fs-repo-migrations/go-migrate"
 	lock "github.com/ipfs/fs-repo-migrations/ipfs-1-to-2/repolock"
-	blocks "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/ipfs/go-ipfs/blocks"
-	util "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/ipfs/go-ipfs/util"
-	dstore "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore"
-	flatfs "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore/flatfs"
-	leveldb "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore/leveldb"
-	mount "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore/mount"
-	dsq "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore/query"
-	sync "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-datastore/sync"
-	rename "github.com/ipfs/fs-repo-migrations/ipfs-2-to-3/Godeps/_workspace/src/github.com/jbenet/go-os-rename"
 	base32 "github.com/ipfs/fs-repo-migrations/ipfs-3-to-4/base32"
 	nuflatfs "github.com/ipfs/fs-repo-migrations/ipfs-3-to-4/flatfs"
 	mfsr "github.com/ipfs/fs-repo-migrations/mfsr"
 	log "github.com/ipfs/fs-repo-migrations/stump"
+	dstore "github.com/ipfs/go-datastore"
+	flatfs "github.com/ipfs/go-datastore/flatfs"
+	leveldb "github.com/ipfs/go-datastore/leveldb"
+	mount "github.com/ipfs/go-datastore/mount"
+	dsq "github.com/ipfs/go-datastore/query"
+	sync "github.com/ipfs/go-datastore/sync"
+	blocks "github.com/ipfs/go-ipfs/blocks"
+	util "github.com/ipfs/go-ipfs/util"
+	rename "github.com/jbenet/go-os-rename"
 )
 
 type Migration struct{}
